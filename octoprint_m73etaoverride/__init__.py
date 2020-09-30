@@ -59,6 +59,7 @@ def m73_gcode_analysis_queue(*args, **kwargs):
   return dict(gcode=lambda finished_callback: M73AnalysisQueue(finished_callback))
 
 __plugin_name__ = "M73 ETA Override"
+__plugin_pythoncompat__ = ">=2.7,<4"
 
 def __plugin_load__():
   global __plugin_implementation__
